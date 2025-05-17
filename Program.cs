@@ -1,10 +1,12 @@
-﻿using System;
-
-
-class test {
-    public static void Main(string[] args) {
-        Console.WriteLine("My name is Rakibul Hasan Sezan");
-        Console.WriteLine("I am 27 years old");
-        Console.WriteLine("Allah is with me");
+﻿public class MyClass
+{
+    public static void Main(string[] args)
+    {
+        string input = "10";
+        int result;
+        bool isSuccess = int.TryParse(input, out result);
+        Console.WriteLine($"isSuccess = {isSuccess}");
+        Console.WriteLine($"result = {result}");
+        Console.ReadKey();
     }
 }
