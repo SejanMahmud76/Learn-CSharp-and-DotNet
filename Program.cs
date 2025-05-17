@@ -1,12 +1,19 @@
-﻿public class MyClass
+﻿using System;
+
+class Test
 {
     public static void Main(string[] args)
     {
-        string input = "10";
-        int result;
-        bool isSuccess = int.TryParse(input, out result);
-        Console.WriteLine($"isSuccess = {isSuccess}");
-        Console.WriteLine($"result = {result}");
-        Console.ReadKey();
+        string? studentName;
+        int studentAge;
+
+        Console.WriteLine("Enter your name: ");
+        studentName = Console.ReadLine();
+
+        Console.WriteLine("Enter your age: ");
+        studentAge = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Name: " + studentName);
+        Console.WriteLine("Age: " + studentAge + " years old");
     }
 }
