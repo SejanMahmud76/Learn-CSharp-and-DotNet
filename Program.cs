@@ -1,8 +1,7 @@
-﻿class Test {
+﻿class test {
     public static void Main(string[] args) {
-        System.Console.WriteLine(123);
-        System.Console.WriteLine("Anisul Islam");
+        System.Console.WriteLine("My name is Rakibul Hasan Sezan");
+        System.Console.WriteLine("I am 27 years old");
+        System.Console.WriteLine("Allah is with me");
     }
 }
-
-
