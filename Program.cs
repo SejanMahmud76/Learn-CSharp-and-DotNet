@@ -1,19 +1,26 @@
 ﻿using System;
+class Test{
+    public static void Main(string[] args){
 
-class Test
-{
-    public static void Main(string[] args)
-    {
-        string? studentName;
-        int studentAge;
+        string StudentName;
+        int StudentAge; 
+        double StudentCgpa;   
 
-        Console.WriteLine("Enter your name: ");
-        studentName = Console.ReadLine();
+        Console.WriteLine("Enter your Name");
+        StudentName = Console.ReadLine();
 
-        Console.WriteLine("Enter your age: ");
-        studentAge = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter your Age");
+        StudentAge = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("Name: " + studentName);
-        Console.WriteLine("Age: " + studentAge + " years old");
+        Console.WriteLine("Enter your CGPA");
+        StudentCgpa = Convert.ToDouble(Console.ReadLine());
+
+        Console.WriteLine("Nmae:" + StudentName);
+        Console.WriteLine("Age:" + StudentAge +"years old");
+        Console.WriteLine("CGPA:" + StudentCgpa );
+        
+
+
+
     }
 }
