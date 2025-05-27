@@ -12,7 +12,7 @@ class Person
 
     }
 
-    public void SetInfo(string name, int age)
+    public Person(string name, int age)
     {
         Name = name;
         Age = age;
@@ -26,12 +26,12 @@ class Test
 {
     public static void Main(string[] args)
     {
-        Person p1 = new Person();
-        p1.SetInfo("Rakibul Hasan ", 28);
+        Person p1 = new Person("Rakibul Hasan ", 28);
+       
         p1.DisplayInfo();
 
-        Person p2 = new Person();
-        p2.SetInfo("Rubayet Hasan ", 28);
+        Person p2 = new Person("Rubayet Hasan ", 28);
+      
         p2.DisplayInfo();
     }
 
