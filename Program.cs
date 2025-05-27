@@ -1,38 +1,50 @@
 ﻿using System;
 
 
-class Person
+
+class Person()
 {
+
     public string Name;
-    public int Age;
+    private int Age;
 
     public void DisplayInfo()
     {
-        Console.WriteLine($"Nmae of person  is {Name} &  Age :{Age}\n");
+        Console.WriteLine($"Nmae:{Name} & Age: {Age}");
+
 
     }
 
-    public Person(string name, int age)
+    public void SetAge(int age)
     {
-        Name = name;
+
         Age = age;
-
-
     }
+
+    
+
 }
 
 
-class Test
+
+
+class test()
 {
+
     public static void Main(string[] args)
     {
-        Person p1 = new Person("Rakibul Hasan ", 28);
-       
+        Person p1 = new Person();
+        p1.Name = "SEZAN";
+        p1.SetAge (28);
         p1.DisplayInfo();
 
-        Person p2 = new Person("Rubayet Hasan ", 28);
-      
+        Person p2 = new Person();
+        p2.Name = "SINTHIYA";
+        p2.SetAge(36);
         p2.DisplayInfo();
+
+
+
     }
 
 }
